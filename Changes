@@ -1,3 +1,11 @@
+{{$NEXT}}
+
+    * Re-established a public git repository.
+    * Cleaned up the repo and switched to Dist::Zilla for development support.
+    * [RT#108096] The EXTEND method is no longer available for tied arrays. 
+      (HT: Slaven Rezic for the fix / Dave Mitchell for finding the problem /
+      ANDK for reporting it)
+
 2006-01-09  Andrew Sterling Hanenkamp <hanenkamp@cpan.org>
 
     * Fixed a typo in Tie::Simple::Hash.

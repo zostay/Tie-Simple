@@ -1,7 +1,4 @@
-Tie::Simple
-=============
-
-Andrew Sterling Hanenkamp, <hanenkamp@users.sourceforge.net>
+# Tie::Simple
 
 This is a cousin of my Tie::Filter module. Tie::Simple basically dumbs down
 the implementation of simple ties so that a full-blown package need not be
@@ -17,19 +14,19 @@ been done isn't precisely intuitive, but I was too lazy to do it better.
 If someone wants to modify the code and improve it, please do and send me some
 patches.
 
-INSTALLATION
+## INSTALLATION
 
 Follow the typical Perl custom:
 
-  perl Makefile.PL
-  make
-  make test
-  make install
+    perl Makefile.PL
+    make
+    make test
+    make install
 
 I use PerlIO for the handle tie tests, so 5.8.0 or better is required for the
 all tests to succeed, but the classes themselves will probably work with 5.6.
 
-COPYRIGHT AND LICENSE
+## COPYRIGHT AND LICENSE
 
-Copyright 2004 Andrew Sterling hanenkamp. All Rights Reserved. This library is
-made available under the same terms as Perl itself.
+Copyright 2004, 2015 Andrew Sterling hanenkamp. This library is made available
+under the same terms as Perl itself.
