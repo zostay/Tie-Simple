@@ -143,29 +143,21 @@ a L<Tie::Handle>.
 
 sub TIESCALAR {
     my ($class, $data, %subs) = @_;
-    die "Eat dirt and die! Use Tie::Simple and read the docs, you turkey!"
-        unless $class eq 'Tie::Simple';
     bless { data => $data, subs => \%subs }, 'Tie::Simple::Scalar';
 }
 
 sub TIEARRAY {
     my ($class, $data, %subs) = @_;
-    die "Eat dirt and die! Use Tie::Simple and read the docs, you turkey!"
-        unless $class eq 'Tie::Simple';
     bless { data => $data, subs => \%subs }, 'Tie::Simple::Array';
 }
 
 sub TIEHASH {
     my ($class, $data, %subs) = @_;
-    die "Eat dirt and die! Use Tie::Simple and read the docs, you turkey!"
-        unless $class eq 'Tie::Simple';
     bless { data => $data, subs => \%subs }, 'Tie::Simple::Hash';
 }
 
 sub TIEHANDLE {
     my ($class, $data, %subs) = @_;
-    die "Eat dirt and die! Use Tie::Simple and read the docs, you turkey!"
-        unless $class eq 'Tie::Simple';
     bless { data => $data, subs => \%subs }, 'Tie::Simple::Handle';
 }
 
