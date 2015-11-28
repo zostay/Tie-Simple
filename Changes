@@ -5,6 +5,7 @@
     * [RT#108096] The EXTEND method is no longer available for tied arrays. 
       (HT: Slaven Rezic for the fix / Dave Mitchell for finding the problem /
       ANDK for reporting it)
+    * Fixed a type in the DESTROY method in Tie::Simple::Handle
 
 2006-01-09  Andrew Sterling Hanenkamp <hanenkamp@cpan.org>
 

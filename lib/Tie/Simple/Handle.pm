@@ -23,6 +23,6 @@ sub READLINE { shift->_doit('READLINE') }
 sub GETC { shift->_doit('GETC') }
 sub CLOSE { shift->_doit('CLOSE') }
 sub UNTIE { shift->_doit('UNTIE') }
-sub DESTORY { shift->_doit('DESTORY') }
+sub DESTROY { shift->_doit('DESTROY') }
 
 1
