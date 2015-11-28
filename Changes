@@ -1,5 +1,7 @@
 {{$NEXT}}
 
+1.04      2015-11-28 11:23:48-06:00 America/Chicago
+
     * Re-established a public git repository.
     * Cleaned up the repo and switched to Dist::Zilla for development support.
     * [RT#108096] The EXTEND method is no longer available for tied arrays. 
