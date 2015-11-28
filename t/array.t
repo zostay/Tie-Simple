@@ -32,7 +32,12 @@ ok(!exists $x[3], "EXISTS 3");
 delete $x[0];
 ok(!defined $y[0], 'DELETE');
 @x = ();
-is($c, 0, 'EXTEND');
+if ($] > 5.023003) {
+     # EXTEND not called anymore on @x=(), see https://rt.perl.org/Ticket/Display.html?id=126472
+     is($c, 3, 'no EXTEND');
+} else {
+    is($c, 0, 'EXTEND');
+}
 is(scalar @y, 0, 'CLEAR');
 push @x, 'M', 'N', 'O', 'P';
 is_deeply(\@y, [ qw(M N O P) ], 'PUSH');
