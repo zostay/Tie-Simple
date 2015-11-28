@@ -1,0 +1,12 @@
+2006-01-09  Andrew Sterling Hanenkamp <hanenkamp@cpan.org>
+
+    * Fixed a typo in Tie::Simple::Hash.
+
+2004-06-04  Andrew Sterling Hanenkamp <hanenkamp@users.sourceforge.net>
+
+	* Fixed a compile bug that I somehow let into the 1.01 distro.
+
+2004-06-02  Andrew Sterling Hanenkamp <hanenkamp@users.sourceforge.net>
+
+	* Initial release with basic scalar, array, hash, and handle simplified
+	  tie functionality.

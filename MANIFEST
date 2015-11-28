@@ -1,0 +1,15 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+Simple/Array.pm
+Simple/Handle.pm
+Simple/Hash.pm
+Simple/Scalar.pm
+Simple/Util.pm
+Simple.pm
+t/array.t
+t/handle.t
+t/hash.t
+t/scalar.t
+META.yml                                Module meta-data (added by MakeMaker)
