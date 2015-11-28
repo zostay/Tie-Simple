@@ -10,9 +10,7 @@ use Tie::Simple::Array;
 use Tie::Simple::Hash;
 use Tie::Simple::Handle;
 
-=head1 NAME
-
-Tie::Simple - Variable ties made easier: much, much, much easier...
+# ABSTRACT: Variable ties made easier: much, much, much easier...
 
 =head1 SYNOPSIS
 
@@ -48,12 +46,12 @@ Tie::Simple - Variable ties made easier: much, much, much easier...
 
   tie *HANDLE, 'Tie::Simple', $data,
       WRITE     => sub { ... },
-	  PRINT     => sub { ... },
-	  PRINTF    => sub { ... },
-	  READ      => sub { ... },
-	  READLINE  => sub { ... },
-	  GETC      => sub { ... },
-	  CLOSE     => sub { ... };
+      PRINT     => sub { ... },
+      PRINTF    => sub { ... },
+      READ      => sub { ... },
+      READLINE  => sub { ... },
+      GETC      => sub { ... },
+      CLOSE     => sub { ... };
 
 =head1 DESCRIPTION
 
@@ -146,31 +144,31 @@ a L<Tie::Handle>.
 =cut
 
 sub TIESCALAR {
-	my ($class, $data, %subs) = @_;
-	die "Eat dirt and die! Use Tie::Simple and read the docs, you turkey!"
-		unless $class eq 'Tie::Simple';
-	bless { data => $data, subs => \%subs }, 'Tie::Simple::Scalar';
+    my ($class, $data, %subs) = @_;
+    die "Eat dirt and die! Use Tie::Simple and read the docs, you turkey!"
+        unless $class eq 'Tie::Simple';
+    bless { data => $data, subs => \%subs }, 'Tie::Simple::Scalar';
 }
 
 sub TIEARRAY {
-	my ($class, $data, %subs) = @_;
-	die "Eat dirt and die! Use Tie::Simple and read the docs, you turkey!"
-		unless $class eq 'Tie::Simple';
-	bless { data => $data, subs => \%subs }, 'Tie::Simple::Array';
+    my ($class, $data, %subs) = @_;
+    die "Eat dirt and die! Use Tie::Simple and read the docs, you turkey!"
+        unless $class eq 'Tie::Simple';
+    bless { data => $data, subs => \%subs }, 'Tie::Simple::Array';
 }
 
 sub TIEHASH {
-	my ($class, $data, %subs) = @_;
-	die "Eat dirt and die! Use Tie::Simple and read the docs, you turkey!"
-		unless $class eq 'Tie::Simple';
-	bless { data => $data, subs => \%subs }, 'Tie::Simple::Hash';
+    my ($class, $data, %subs) = @_;
+    die "Eat dirt and die! Use Tie::Simple and read the docs, you turkey!"
+        unless $class eq 'Tie::Simple';
+    bless { data => $data, subs => \%subs }, 'Tie::Simple::Hash';
 }
 
 sub TIEHANDLE {
-	my ($class, $data, %subs) = @_;
-	die "Eat dirt and die! Use Tie::Simple and read the docs, you turkey!"
-		unless $class eq 'Tie::Simple';
-	bless { data => $data, subs => \%subs }, 'Tie::Simple::Handle';
+    my ($class, $data, %subs) = @_;
+    die "Eat dirt and die! Use Tie::Simple and read the docs, you turkey!"
+        unless $class eq 'Tie::Simple';
+    bless { data => $data, subs => \%subs }, 'Tie::Simple::Handle';
 }
 
 =head1 TO DO
@@ -183,15 +181,6 @@ think to do it. I don't really have time to add such a feature just now.
 =head1 SEE ALSO
 
 L<perltie>, L<Tie::Scalar>, L<Tie::Array>, L<Tie::Hash>, L<Tie::Handle>
-
-=head1 AUTHOR
-
-Andrew Sterling Hanenkamp, E<lt>hanenkamp@users.sourceforge.netE<gt>
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright 2004 Andrew Sterling Hanenkamp. All Rights Reserved. This library is
-made available under the same terms as Perl itself.
 
 =cut
 
