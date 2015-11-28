@@ -25,9 +25,8 @@ need to:
     dzil authordeps | cpanm
     dzil install
 
-This uses PerlIO for the handle tie tests, so 5.8.0 or better is required for
-the all tests to succeed, but the classes themselves will probably work with
-5.6.
+Versions back to 5.8.0 or even 5.6 may work, but I make no attempt to verify
+that or fix bugs related to ancient versions of Perl.
 
 ## COPYRIGHT AND LICENSE
 
