@@ -3,12 +3,10 @@ package Tie::Simple::Scalar;
 use strict;
 use warnings;
 
-our $VESRION = '1.01';
-
 use base qw(Tie::Scalar Tie::Simple);
 use Tie::Simple::Util;
 
-# Copyright 2004 Andrew Sterling Hanenkamp. All Rights Reserved. This software
+# Copyright 2004, 2015 Andrew Sterling Hanenkamp. This software
 # is made available under the same terms as Perl itself.
 
 sub _doit {
